@@ -1,0 +1,442 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif, ;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    box-sizing: border-box;
+
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+.imgfondo {
+    width: 100%;
+    height: 35rem;
+    background-color: #FFFFFF;
+}
+
+header {
+    height: 6rem;
+    width: 100%;
+    background-color: #475158c3;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.calidad {
+    font-size: 0.9rem;
+    color: white;
+}
+
+.texthome>ul {
+    display: flex;
+    gap: 4rem;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.texthome li {
+    z-index: 999;
+}
+
+.inicio {
+    color: #12aaeb;
+    border: solid 2px #12aaeb;
+}
+
+.section1 {
+    width: 100%;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/img/pexels-eberhard-grossgasteiger-858115.jpg);
+    opacity: 0.7;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+
+.section1>h2 {
+    width: 29rem;
+    height: 4rem;
+    background-color: #475158ac;
+    color: white;
+    font-size: 3.2rem;
+    font-weight: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    background-color: #12aaeb;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.div1>h2 {
+    font-size: 1.1rem;
+}
+
+.div1>img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.div1 {
+    width: 10rem;
+    height: auto;
+    color: white;
+}
+
+.section3 {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 3rem 0rem 3rem 0rem;
+}
+
+.section3>h2 {
+    display: flex;
+    padding-left: 15.9rem;
+    padding-bottom: 2rem;
+    color: #475158ac;
+}
+
+.galeria>img {
+    width: 13rem;
+    height: 13rem;
+    opacity: 0.6;
+}
+
+.galeria {
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    max-width: 450px;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.section4 {
+    width: 100%;
+    height: auto;
+    background-color: #838a8e;
+    display: flex;
+    padding: 4rem 1rem 4rem 3rem;
+}
+
+.info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info>h2 {
+    padding-left: 8rem;
+}
+
+.info>p {
+    width: 30rem;
+    height: auto;
+    font-size: 1.2rem;
+    color: white;
+    padding-left: 8rem;
+}
+
+.info>a {
+    width: 9rem;
+    height: 2rem;
+    background-color: #838a8e;
+    border: solid 2.5px #4b555d;
+    color: #4b555d;
+    margin-left: 8rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+
+
+}
+
+
+.video {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+
+
+}
+
+
+
+.section5 {
+    width: 100%;
+    height: auto;
+    background-image: url(/img/pexels-fujifilm-north-america-3497126.jpg);
+    filter: grayscale(100%);
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 4rem 4rem 4rem;
+
+}
+
+.section5>p {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.section5>h2 {
+    padding-left: 9rem;
+    font-size: 1.8rem;
+}
+
+.flecha {
+    width: 3rem;
+    height: 3rem;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3rem 3rem 3rem 3rem;
+    background-color: #475158c3;
+}
+
+footer>ul>li {
+    color: #4b555d;
+    display: flex;
+}
+
+footer>ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer img {
+    width: 1rem;
+    height: 1rem;
+
+}
+
+.open,
+.close {
+    display: none;
+}
+
+
+@media (max-width: 480px) {
+
+    header {
+        flex-direction: row;
+    }
+
+    .calidad{
+        font-size: 1.2rem;
+    }
+  
+    /* menu hamburguesa */
+
+    .texthome {
+        padding: 1rem;
+        background-color: rgb(71, 81, 88);
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        flex-direction: column;
+        visibility: hidden; 
+        display:flex;
+        text-align: center;
+        align-items: center;
+    }
+
+    .texthome > ul {
+        flex-direction: column;
+    }
+
+    .texthome.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .close,
+    .open {
+        padding-bottom: 1rem;
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .open{
+        margin-top: 1.5rem;
+    }
+
+    /* termina menu */
+
+    .section1>h2 {
+        width: 35rem;
+        font-size: 4.2rem;
+
+    }
+
+    .section1 {
+        width: 42rem;
+    }
+
+    .section2 {
+        width: 42rem;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem
+    }
+
+    .div1 {
+        width: 25rem;
+        height: auto;
+        color: white;
+    }
+
+    .div1>h2 {
+        font-size:2rem;
+    }
+
+    .div1>img {
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .section3 {
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 3rem 0rem 3rem 0rem;
+    }
+
+    .section3>h2 {
+        font-size: 2rem;
+
+    }
+
+    .galeria>img {
+        width: 12rem;
+        height: 12rem;
+        opacity: 0.6;
+    }
+
+    .galeria {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 30px;
+        padding-left: 12rem;
+    }
+
+    .section4 {
+        width: 42rem;
+        height: auto;
+        background-color: #838a8e;
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .info {
+        width: 50%;
+
+    }
+
+    .info>h2 {
+        padding-left: 8rem;
+        font-size: 2rem;
+    }
+
+    .info>p {
+        width: 35rem;
+        font-size: 1.5rem;
+        padding-left: 8rem;
+    }
+
+    .info>a {
+        width: 12rem;
+        height: 3rem;
+        margin-left: 8rem;
+        font-size: 1rem;
+        
+    }
+
+    .video {
+        opacity: 0.7;
+        padding: 2rem 0rem 1rem 10rem;
+        width: 25rem;
+    }
+
+    .section5 {
+        width: 42rem;
+    }
+
+    .section5>p {
+        flex-direction: column;
+        font-size: 2rem;
+    }
+
+    .section5>h2 {
+        padding-left: 12rem;
+        font-size: 2rem;
+    }
+
+    .flecha {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    footer {
+        width: 42rem;
+    }
+
+    footer>ul>li {
+        font-size: 1.5rem;
+    }
+
+    footer>ul {
+        gap: 0.5rem;
+    }
+
+    footer img {
+        width: 1.2rem;
+        height: 1.2rem;
+        margin-top: 0.3rem;
+
+    }
+
+
+}
